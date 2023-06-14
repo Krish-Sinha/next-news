@@ -3,13 +3,12 @@
     height: 50px;
     display: flex;
     justify-content: center;
+    font-size: 30px;
 }
 
 .main div {
     margin: 25px;
     cursor: pointer;
-    font-size: 22px;
-    
 }
 
 .main div:hover {

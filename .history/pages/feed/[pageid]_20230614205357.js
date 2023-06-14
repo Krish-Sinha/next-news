@@ -57,6 +57,11 @@ export const Feed = ({ articles, pageNumber }) => {
 						className={pageNumber === 5 ? styles.disabled : styles.active}
 						onClick={() => {
 							if (pageNumber < 5) {
+								// As of the current version of Next.js the default behavior for router.push
+								// will leave the scroll where it is, so we have to manually call scrollTo.
+								// This however is being worked on and is fixed in canary.
+								// Show this in tutorial vid:
+								// https://github.com/vercel/next.js/issues/3249
 								router
 									.push(`/feed/${pageNumber + 1}`)
 									.then(() => window.scrollTo(0, 0))

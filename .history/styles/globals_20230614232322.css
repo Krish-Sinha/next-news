@@ -20,5 +20,5 @@ a {
   display: flex;
   height: 100vh;
   flex-direction: column; 
-  /* background-color: #d0bdf4; */
+  background-color: #d0bdf4;
 }
